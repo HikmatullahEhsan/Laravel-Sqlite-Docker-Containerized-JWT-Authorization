@@ -22,6 +22,12 @@ If you encounter any issues with filesystem permissions while visiting your appl
 
 Then, either bring back up your container network or re-run the command you were trying before, and see if that fixes it.
 
+## API Documentaions
+All APIs have a documentation. 
+https://documenter.getpostman.com/view/15724966/U16nL4ZW#aebcb5b7-399a-4281-9b4e-6dc7230ad774
+
+
+
 ## Testing
 Inside docker container go the src folder and run the following command for testing.
 ```bash
