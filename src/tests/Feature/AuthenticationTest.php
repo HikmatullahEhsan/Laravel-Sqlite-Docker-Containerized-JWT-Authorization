@@ -9,18 +9,6 @@ use Illuminate\Http\Response;
 class UserTest extends TestCase
 {
     use RefreshDatabase;
-    // public function testMustEnterEmailAndPassword()
-    // {
-    //     $this->json('POST', 'api/v1/auth')
-    //         ->assertStatus(422)
-    //         ->assertJson([
-    //             "message" => "The given data was invalid.",
-    //             "errors" => [
-    //                 'email' => ["The email field is required."],
-    //                 'password' => ["The password field is required."],
-    //             ]
-    //         ]);
-    // }
 
     public function testWithWrongEmailAndPassword()
     {
