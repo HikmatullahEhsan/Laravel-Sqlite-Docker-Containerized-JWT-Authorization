@@ -52,5 +52,5 @@ From your terminal window at the project root, run the following command to star
 docker-compose run --rm --service-ports npm run watch
 ```
 
-That should keep a small info pane open in your terminal (which you can exit with Ctrl + C). Visiting [localhost:3000](http://localhost:3000) in your browser should then load up your Laravel application with BrowserSync enabled and hot-reloading active.
+That should keep a small info pane open in your terminal (which you can exit with Ctrl + C). Visiting [localhost:8000](http://localhost:8000) in your browser should then load up your Laravel application with BrowserSync enabled and hot-reloading active.
 
