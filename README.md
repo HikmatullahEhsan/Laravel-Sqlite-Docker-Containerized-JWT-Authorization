@@ -1,20 +1,8 @@
-# Laravel-SQlite-Docker-Containerize-JWT-Authorization-CRUD
-A pretty simplified Docker Compose workflow that sets up a LEMP network of containers for local Laravel development. You can view the full article that inspired this repo [here](https://dev.to/aschmelyun/the-beauty-of-docker-for-local-laravel-development-13c0).
-
-[![GitNFT](https://img.shields.io/badge/%F0%9F%94%AE-Open%20in%20GitNFT-darkviolet?style=flat)](https://gitnft.quine.sh/app/commits/list/repo/docker-compose-laravel)
-
+# Laravel-SQlite-Docker-Authorization-CRUD
+A sample project for Authentication and Authorization of a sample CRUD operations developed with Docker, Laravel, REST APIs, and SQlite.
 ## Usage
 
-To get started, make sure you have [Docker installed](https://docs.docker.com/docker-for-mac/install/) on your system, and then clone this repository.
-
-Next, navigate in your terminal to the directory you cloned this, and spin up the containers for the web server by running `docker-compose up -d --build site`.
-
-After that completes, follow the steps from the [src/README.md](src/README.md) file to get your Laravel project added in (or create a new blank one).
-
-Bringing up the Docker Compose network with `site` instead of just using `up`, ensures that only our site's containers are brought up at the start, instead of all of the command containers as well. The following are built for our web server, with their exposed ports detailed:
-
 - **nginx** - `:80`
-- **mysql** - `:3306`
 - **php** - `:9000`
 
 Three additional containers are included that handle Composer, NPM, and Artisan commands *without* having to have these platforms installed on your local computer. Use the following command examples from your project root, modifying them to fit your particular use case.
@@ -36,7 +24,19 @@ Then, either bring back up your container network or re-run the command you were
 
 
 ```
+## Testing
+Inside docker container go the src folder and run the following command for testing.
+```bash
+vendor/bin/phpunit
+```
 
+## Log Creation
+All activites logs have been created in 
+```bash
+vendor/bin/phpunit
+```
+Storage->Logs->
+```
 ## Using BrowserSync with Laravel Mix
 
 If you want to enable the hot-reloading that comes with Laravel Mix's BrowserSync option, you'll have to follow a few small steps. First, ensure that you're using the updated `docker-compose.yml` with the `:3000` and `:3001` ports open on the npm service. Then, add the following to the end of your Laravel project's `webpack.mix.js` file:
