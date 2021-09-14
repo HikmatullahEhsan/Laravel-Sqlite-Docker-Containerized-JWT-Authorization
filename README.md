@@ -22,8 +22,6 @@ If you encounter any issues with filesystem permissions while visiting your appl
 
 Then, either bring back up your container network or re-run the command you were trying before, and see if that fixes it.
 
-
-```
 ## Testing
 Inside docker container go the src folder and run the following command for testing.
 ```bash
